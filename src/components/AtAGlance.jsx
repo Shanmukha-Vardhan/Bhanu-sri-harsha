@@ -4,7 +4,7 @@ import './AtAGlance.css';
 
 const AtAGlance = () => {
   const stats = [
-    { label: 'Matches', value: '120+' },
+    { label: 'Matches', value: '140+' },
     { label: 'Runs', value: '4,500+' },
     { label: 'Wickets', value: '85+' },
     { label: 'High Score', value: '142*' },
@@ -21,8 +21,8 @@ const AtAGlance = () => {
         <h2 className="section-title">AT A GLANCE</h2>
         <div className="stats-grid">
           {stats.map((stat, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               className="stat-card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
