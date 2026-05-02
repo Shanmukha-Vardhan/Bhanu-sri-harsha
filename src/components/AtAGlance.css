@@ -12,18 +12,24 @@
 
 .stat-card {
   background-color: var(--bg-color);
-  padding: 3rem 1.5rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: var(--transition-smooth);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: default;
+  position: relative;
+  z-index: 1;
 }
 
 .stat-card:hover {
   background-color: var(--text-primary);
   color: var(--bg-color);
+  transform: translateY(-4px) scale(1.02);
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .stat-card:hover .stat-label {
@@ -31,16 +37,21 @@
 }
 
 .stat-value {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
   letter-spacing: -1px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover .stat-value {
+  transform: scale(1.05);
 }
 
 .stat-label {
   font-family: var(--font-body);
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--text-secondary);
   font-size: 0.75rem;
   transition: var(--transition-smooth);
@@ -49,6 +60,10 @@
 @media (min-width: 768px) {
   .stats-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .stat-card {
+    padding: 3rem 1.5rem;
   }
   
   .stat-value {
