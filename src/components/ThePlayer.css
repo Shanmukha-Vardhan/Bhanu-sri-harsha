@@ -1,0 +1,42 @@
+.the-player {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.player-title-col .section-title {
+  margin-bottom: 0;
+}
+
+.bio-paragraph {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.drop-cap {
+  float: left;
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  line-height: 0.8;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+  .player-grid {
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+  }
+  
+  .bio-paragraph {
+    font-size: 1.5rem;
+  }
+}
