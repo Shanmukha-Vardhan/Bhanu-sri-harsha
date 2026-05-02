@@ -6,7 +6,7 @@ const AtAGlance = () => {
   const stats = [
     { label: 'Matches', value: '150+' },
     { label: 'Runs', value: '4,500+' },
-
+    { label: 'Wickets', value: '85+' },
     { label: 'High Score', value: '142*' },
   ];
 
