@@ -43,7 +43,7 @@ img {
 
 /* Base styles for sections */
 .section-padding {
-  padding: 5rem 1.5rem;
+  padding: 4rem 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -58,10 +58,11 @@ img {
 }
 
 .section-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   letter-spacing: -1px;
+  line-height: 1.1;
 }
 
 @media (min-width: 768px) {
